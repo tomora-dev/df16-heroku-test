@@ -25,7 +25,7 @@ def hello():
     app.logger.warning('A warning occurred (%d apples)', 42)
     app.logger.error('An error occurred')
     app.logger.info('Info')
-    return 'Hello New World!'
+    return 'Hello World!'
 
 @app.route('/accounts')
 def accounts():
