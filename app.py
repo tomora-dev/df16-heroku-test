@@ -25,14 +25,14 @@ def hello():
     app.logger.warning('A warning occurred (%d apples)', 42)
     app.logger.error('An error occurred')
     app.logger.info('Info')
-    return 'Hello World!'
+    return 'Hello New World!'
 
-@app.route('/contacts')
-def contacts():
+@app.route('/accounts')
+def accounts():
     try:
         my_list = []
         if cur != None:
-            cur.execute("""SELECT name from salesforce.contact""")
+            cur.execute("""SELECT name from salesforce.account""")
             rows = cur.fetchall()
             response = ''
             
